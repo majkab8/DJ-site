@@ -4,10 +4,12 @@
 		<title>Adriano - DJ i konferansjer na wesela</title>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta property="og:title" content="Adriano - DJ i konferansjer na wesela"/>
-		<meta name="description" content="Adriano — DJ i konferansjer na wesela oraz imprezy okolicznościowe.
-		 Świetna muzyka, prowadzenie i energia, dzięki którym parkiet nie pustoszeje. Zarezerwuj termin już teraz!"/>
-		<meta name=""
+		<meta property="og:title" content="Adriano - DJ i konferansjer na wesela" />
+		<meta
+			name="description"
+			content="Adriano — DJ i konferansjer na wesela oraz imprezy okolicznościowe.
+		 Świetna muzyka, prowadzenie i energia, dzięki którym parkiet nie pustoszeje. Zarezerwuj termin już teraz!"
+		/>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -22,12 +24,29 @@
 				<a href="#home" class="logo">AB</a>
 				<a href="#home" class="title">DJ Adriano</a>
 			</div>
-			<nav class="header-right">
+			<nav id="header-right" class="header-right">
 				<a href="#about-me">O mnie</a>
 				<a href="#gallery">Galeria</a>
 				<a href="#contact">Kontakt</a>
 				<a href="#contact" class="reservation-button">Zarezerwuj termin</a>
 			</nav>
+			<button
+				type="button"
+				class="hamburger-icon"
+				aria-label="Menu"
+				aria-expanded="false"
+				onclick="hamburgerFunction(this)"
+			>
+				<img src="menu.svg" class="icon-menu" alt="" />
+				<img src="menu-close.svg" class="icon-close" alt="" />
+			</button>
+			<script>
+				function hamburgerFunction(btn) {
+					const nav = document.getElementById("header-right");
+					const isOpen = nav.classList.toggle("open");
+					btn.setAttribute("aria-expanded", isOpen);
+				}
+			</script>
 		</header>
 		<main>
 			<section id="home" aria-labelledby="hero-heading" class="hero-section">
@@ -41,10 +60,11 @@
 				<div class="main-page">
 					<div class="main-left-section">
 						<p class="mini-title">dj & konferansjer na wesela</p>
-							<h1 id="hero-heading" class="motto">
-								Wyjątkowy dzień zasługuje na<span class="motto-accent">
-									wyjątkową zabawę</span>
-							</h1>
+						<h1 id="hero-heading" class="motto">
+							Wyjątkowy dzień zasługuje na<span class="motto-accent">
+								wyjątkową zabawę</span
+							>
+						</h1>
 						<p class="description">
 							Prowadzę wesela oraz imprezy okolicznościowe z klasą i wyczuciem.
 							Muzyka, konferansjerka i dobra energia, dzięki którym parkiet nie
@@ -261,7 +281,7 @@
 				</div>
 				<div class="contact-right-section">
 					<form
-					id="contact-form"
+						id="contact-form"
 						class="contact-form"
 						action="https://api.web3forms.com/submit"
 						method="POST"
@@ -327,21 +347,23 @@
 							></textarea>
 						</div>
 						<button type="submit">Wyślij zapytanie</button>
-						<input type="hidden" name="redirect" value=""/>
+						<input type="hidden" name="redirect" value="" />
 					</form>
 					<div id="form-success" class="form-success-overlay" hidden>
 						<div class="form-success-box" role="status">
 							Dziękuje! Odezwę się wkrótce.
 						</div>
-					</div>	
+					</div>
 					<script>
 						const form = document.querySelector(".contact-form");
 						const overlay = document.getElementById("form-success");
 
 						form.addEventListener("submit", async (e) => {
 							e.preventDefault();
-							const res = await fetch(form.action, { method: "POST", body: new FormData(form)
-								});
+							const res = await fetch(form.action, {
+								method: "POST",
+								body: new FormData(form),
+							});
 							if (res.ok) {
 								form.reset();
 								overlay.hidden = false;
@@ -350,8 +372,10 @@
 							}
 						});
 
-						overlay.addEventListener("click", () => { overlay.hidden = true; });
-						document.addEventListener("keydown", e => {
+						overlay.addEventListener("click", () => {
+							overlay.hidden = true;
+						});
+						document.addEventListener("keydown", (e) => {
 							if (e.key === "Escape") overlay.hidden = true;
 						});
 					</script>
