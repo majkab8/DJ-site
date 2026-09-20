@@ -21,8 +21,13 @@
 	<body>
 		<header class="header-section">
 			<div class="header-left">
-				<a href="#home" class="logo">AB</a>
-				<a href="#home" class="title">DJ Adriano</a>
+				<a href="#home">
+					<img
+						src="assets/dj-adriano-logo.svg"
+						class="logo"
+						alt="Logo DJ Adriano"
+					/>
+				</a>
 			</div>
 			<nav id="header-right" class="header-right">
 				<a href="#about-me">O mnie</a>
@@ -37,8 +42,8 @@
 				aria-expanded="false"
 				onclick="hamburgerFunction(this)"
 			>
-				<img src="menu.svg" class="icon-menu" alt="" />
-				<img src="menu-close.svg" class="icon-close" alt="" />
+				<img src="icons/menu.svg" class="icon-menu" alt="" />
+				<img src="icons/menu-close.svg" class="icon-close" alt="" />
 			</button>
 			<script>
 				function hamburgerFunction(btn) {
@@ -86,7 +91,7 @@
 									decoding="async"
 									loading="lazy"
 									fetchpriority="high"
-									alt="Zdjęcie DJ-a"
+									alt="Zdjęcie DJ-a Adriano przy konsoli"
 								/>
 							</div>
 						</div>
@@ -128,7 +133,7 @@
 			>
 				<div class="about-me-left-section">
 					<img
-						src="assets/photo1.png"
+						src="assets/dj_photo_1.webp"
 						width="800"
 						height="800"
 						decoding="async"
@@ -186,7 +191,7 @@
 							src="assets/dj_adriano_promotion_video.mp4"
 							controls
 							preload="none"
-							aria-label="Filmik promocyjny DJ Adriano"
+							aria-label="Filmik promocyjny DJ-a Adriano"
 							poster="assets/video_thumbnail.webp"
 							width="600"
 							height="200"
@@ -198,7 +203,7 @@
 					</div>
 					<div class="gallery-item">
 						<img
-							src="assets/photo1.png"
+							src="assets/dj_photo_1.webp"
 							width="400"
 							height="180"
 							decoding="async"
@@ -207,44 +212,44 @@
 						/>
 					</div>
 					<div class="gallery-item">
-						<img
-							src="assets/photo1.png"
-							width="400"
-							height="180"
-							decoding="async"
-							loading="lazy"
-							alt="Zdjęcie"
-						/>
+						<div class="gallery-placeholder">
+							<img
+								src="icons/placeholder-icon.svg"
+								alt=""
+								class="placeholder-icon"
+							/>
+							<span>Zdjęcia wkrótce</span>
+						</div>
 					</div>
 					<div class="gallery-item wide">
-						<img
-							src="assets/photo1.png"
-							width="400"
-							height="180"
-							decoding="async"
-							loading="lazy"
-							alt="Zdjęcie"
-						/>
+						<div class="gallery-placeholder">
+							<img
+								src="icons/placeholder-icon.svg"
+								alt=""
+								class="placeholder-icon"
+							/>
+							<span>Zdjęcia wkrótce</span>
+						</div>
 					</div>
 					<div class="gallery-item">
-						<img
-							src="assets/photo1.png"
-							width="400"
-							height="180"
-							decoding="async"
-							loading="lazy"
-							alt="Zdjęcie"
-						/>
+						<div class="gallery-placeholder">
+							<img
+								src="icons/placeholder-icon.svg"
+								alt=""
+								class="placeholder-icon"
+							/>
+							<span>Zdjęcia wkrótce</span>
+						</div>
 					</div>
 					<div class="gallery-item">
-						<img
-							src="assets/photo1.png"
-							width="400"
-							height="180"
-							decoding="async"
-							loading="lazy"
-							alt="Zdjęcie"
-						/>
+						<div class="gallery-placeholder">
+							<img
+								src="icons/placeholder-icon.svg"
+								alt=""
+								class="placeholder-icon"
+							/>
+							<span>Zdjęcia wkrótce</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -260,24 +265,26 @@
 						Napisz kiedy i gdzie odbywa się Twoja impreza - odezwę się z
 						propozycją i szczegółami.
 					</p>
-					<a href="mailto:adibed@wp.pl" class="contact-card">
-						<span class="contact-card-icon">
-							<img src="mail.svg" alt="" />
-						</span>
-						<div class="contact-card-text">
-							<span class="contact-card-label">E-mail</span>
-							<span class="contact-card-value">adibed@wp.pl</span>
-						</div>
-					</a>
-					<a href="tel:+48604638237" class="contact-card">
-						<span class="contact-card-icon">
-							<img src="phone.svg" alt="" />
-						</span>
-						<div class="contact-card-text">
-							<span class="contact-card-label">Telefon</span>
-							<span class="contact-card-value">+48 604 638 237</span>
-						</div>
-					</a>
+					<div class="contact-cards">
+						<a href="mailto:adibed@wp.pl" class="contact-card">
+							<span class="contact-card-icon">
+								<img src="icons/mail.svg" alt="" />
+							</span>
+							<div class="contact-card-text">
+								<span class="contact-card-label">E-mail</span>
+								<span class="contact-card-value">adibed@wp.pl</span>
+							</div>
+						</a>
+						<a href="tel:+48604638237" class="contact-card">
+							<span class="contact-card-icon">
+								<img src="icons/phone.svg" alt="" />
+							</span>
+							<div class="contact-card-text">
+								<span class="contact-card-label">Telefon</span>
+								<span class="contact-card-value">+48 604 638 237</span>
+							</div>
+						</a>
+					</div>
 				</div>
 				<div class="contact-right-section">
 					<form
@@ -334,6 +341,7 @@
 								name="data_miejsce"
 								placeholder="np. 12.07.2026, Kraków"
 								autocomplete="off"
+								required
 							/>
 						</div>
 						<div class="form-field">
@@ -344,8 +352,12 @@
 								rows="4"
 								placeholder="Opowiedz krótko o swojej imprezie..."
 								autocomplete="off"
+								required
 							></textarea>
 						</div>
+						<p class="form-note">
+							<span class="required-mark">*</span> — pole wymagane
+						</p>
 						<button type="submit">Wyślij zapytanie</button>
 						<input type="hidden" name="redirect" value="" />
 					</form>
@@ -383,7 +395,7 @@
 			</section>
 		</main>
 		<footer class="site-footer">
-			<p class="site-footer-name">Adriano</p>
+			<img src="assets/dj-adriano-logo.svg" class="site-footer-logo" />
 			<p class="site-footer-copy">© 2026 · Sekret udanej zabawy!</p>
 		</footer>
 	</body>
