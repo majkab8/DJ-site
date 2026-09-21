@@ -6,6 +6,9 @@ static site — no frameworks, no build step, just clean HTML and CSS.
 
 🌐 **Live site:** [adrianodj.pl](https://adrianodj.pl)
 
+## Preview
+![DJ Adriano website - homepage](assets/screenshot-homepage.webp)
+
 ## Features
 - **Single-page layout** with smooth in-page navigation (About, Gallery, Contact)
 - **Responsive design** — adapts from desktop down to mobile, with a hamburger menu on small screens
