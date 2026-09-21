@@ -56,5 +56,16 @@ custom domain **adrianodj.pl**. Any push to the `main` branch triggers an
 automatic redeploy.
 
 ## Contact
-For bookings and enquiries, see the contact section on the
+- **Bookings & enquiries for the DJ** - see the contact section on the
 [live site](https://adrianodj.pl).
+- **Questions about this website or its code** - reach out via [GitHub](https://github.com/majkab8)
+
+## Authors
+- **Maja Bednarek** - design & front-end development - [GitHub](https://github.com/majkab8)
+
+Built for **DJ Adriano**.
+
+## License
+© 2026 DJ Adriano. All rights reserved.
+This code is published for portfolio purposes only and may not be reused,
+copied, or redistributed without permission.
