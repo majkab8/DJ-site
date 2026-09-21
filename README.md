@@ -2,7 +2,7 @@
 
 A one-page promotional website for **Adriano**, a wedding DJ and host
 for weddings and special events. Built as a fast, fully
-static site — no frameworks, no build step, just clean HTML and CSS.
+static site - no frameworks, no build step, just clean HTML and CSS.
 
 🌐 **Live site:** [adrianodj.pl](https://adrianodj.pl)
 
@@ -11,16 +11,16 @@ static site — no frameworks, no build step, just clean HTML and CSS.
 
 ## Features
 - **Single-page layout** with smooth in-page navigation (About, Gallery, Contact)
-- **Responsive design** — adapts from desktop down to mobile, with a hamburger menu on small screens
-- **Accessibility-minded** — semantic HTML, ARIA labels, and alt text on media
+- **Responsive design** - adapts from desktop down to mobile, with a hamburger menu on small screens
+- **Accessibility-minded** - semantic HTML, ARIA labels, and alt text on media
 - **Promo video** and image gallery showcasing events
 - **Contact section** with direct email, phone, and a reservation call-to-action
-- **PWA basics** — favicons and a web manifest for a polished look on all devices
+- **PWA basics** - favicons and a web manifest for a polished look on all devices
 
 ## Tech stack
-- **HTML5** — semantic, hand-written markup
-- **CSS3** — custom styles with CSS variables (no framework)
-- **Google Fonts** — Cormorant Garamond & Manrope
+- **HTML5** - semantic, hand-written markup
+- **CSS3** - custom styles with CSS variables (no framework)
+- **Google Fonts** - Cormorant Garamond & Manrope
 - Deployed on **Vercel** with domain from OVH
 
 ## Project structure
