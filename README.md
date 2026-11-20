@@ -1,74 +1,111 @@
-# DJ Adriano — Wedding DJ & Host
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/header-dark.svg">
+    <img src="docs/header-light.svg" width="680" alt="DJ Adriano">
+  </picture>
+</p>
 
-A one-page promotional website for **Adriano**, a wedding DJ and host
-for weddings and special events. Built as a fast, fully
-static site - no frameworks, no build step, just clean HTML and CSS.
+<h3 align="center">A one-page website for a wedding DJ & host</h3>
 
-🌐 **Live site:** [adrianodj.pl](https://adrianodj.pl)
+<p align="center">
+  <br>
+  A promotional site for <b>Adriano</b>, a DJ and host for weddings and special events.
+  <br>
+  Fast and fully static: no frameworks, no build step, just clean HTML and CSS.
+  <br><br>
+</p>
 
-## Preview
+<p align="center">
+  <a href="https://adrianodj.pl"><img src="https://img.shields.io/badge/Visit_adrianodj.pl-D8BD82?style=for-the-badge&labelColor=1A233F" alt="Visit adrianodj.pl"></a>
+</p>
+
+
+### 📸 Preview
+<img src="docs/divider.svg" width="200" alt="">
+
 ![DJ Adriano website - homepage](assets/screenshot-homepage.webp)
 
-## Features
-- **Single-page layout** with smooth in-page navigation (About, Gallery, Contact)
-- **Responsive design** - adapts from desktop down to mobile, with a hamburger menu on small screens
-- **Accessibility-minded** - semantic HTML, ARIA labels, and alt text on media
-- **Promo video** and image gallery showcasing events
-- **Contact section** with direct email, phone, and a reservation call-to-action
-- **PWA basics** - favicons and a web manifest for a polished look on all devices
+### ✨ Features
+<img src="docs/divider.svg" width="200" alt="">
 
-## Tech stack
-- **HTML5** - semantic, hand-written markup
-- **CSS3** - custom styles with CSS variables (no framework)
-- **Google Fonts** - Cormorant Garamond & Manrope
-- Deployed on **Vercel** with domain from OVH
+#### 🧭 Single-page layout
+Smooth in-page navigation between **About**, **Gallery** and **Contact**.
 
-## Project structure
+#### 📱 Responsive design
+Adapts from desktop down to mobile, with a **hamburger menu** on small screens.
+
+#### ♿ Accessibility-minded
+**Semantic HTML**, ARIA labels, and alt text on media.
+
+#### 🎬 Promo video and gallery
+A **promo video** and an image gallery showcasing events.
+
+#### ✉️ Contact section
+Direct **email**, **phone**, and a reservation call-to-action.
+
+#### 🧩 PWA basics
+**Favicons** and a **web manifest** for a polished look on all devices.
+
+### 🛠️ Tech stack
+<img src="docs/divider.svg" width="200" alt="">
+
+| Category | Stack |
+|---|---|
+| **Markup** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) semantic, hand-written markup |
+| **Styles** | ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) custom styles with CSS variables (no framework) |
+| **Fonts** | ![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=flat-square&logo=googlefonts&logoColor=white) Cormorant Garamond & Manrope |
+| **Hosting** | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) ![OVH](https://img.shields.io/badge/domain-OVH-123F6D?style=flat-square&logo=ovh&logoColor=white) |
+
+### 🗂️ Project structure
+<img src="docs/divider.svg" width="200" alt="">
+
 ```
 DJ-site/
 ├── index.html          # The page markup
 ├── dj-site.css         # All styles
 ├── site.webmanifest    # PWA manifest
 ├── assets/             # Logo, photos, promo video
+├── docs/               # README graphics
 └── icons/              # UI icons and favicons
 ```
 
-## Running locally
-No build tools or dependencies are required. Either:
+### 🚀 Running locally
+<img src="docs/divider.svg" width="200" alt="">
 
-1. **Get the files** - clone the repo (or download it as a ZIP):
-    ```bash
-   git clone https://github.com/majkab8/DJ-site.git
-   cd DJ-site
-   ```
-    
-2. **Open the site** - either:
-  - **Directly:** double-click `index.html` to open it in your browser, or
-  - **Serve locally** (recommended, so paths behave like production):
+No build tools or dependencies are required.
 
-   ```bash
-   # Python 3
-   python -m http.server 8000
-   ```
+**1. Get the files**: clone the repo (or download it as a ZIP).
 
-   Then visit `http://localhost:8000`.
+```bash
+git clone https://github.com/majkab8/DJ-site.git
+cd DJ-site
+```
 
-## Deployment
-The site is deployed on [Vercel](https://vercel.com) and served from the
-custom domain **adrianodj.pl**. Any push to the `main` branch triggers an
-automatic redeploy.
+**2. Open the site**, either:
 
-## Contact
-- **Bookings & enquiries for the DJ** - see the contact section on the
-[live site](https://adrianodj.pl).
-- **Questions about this website or its code** - reach out via [GitHub](https://github.com/majkab8)
+- **Directly:** double-click `index.html` to open it in your browser, or
+- **Serve locally** (recommended, so paths behave like production):
 
-## Authors
-- **Maja Bednarek** - design & front-end development - [GitHub](https://github.com/majkab8)
+```bash
+# Python 3
+python -m http.server 8000
+```
 
-Built for **DJ Adriano**.
+Then visit http://localhost:8000.
 
-## License
+### ☁️ Deployment
+<img src="docs/divider.svg" width="200" alt="">
+
+The site is deployed on [Vercel](https://vercel.com) and served from the custom domain **adrianodj.pl**. Any push to the `main` branch triggers an automatic redeploy.
+
+### 💬 Contact
+<img src="docs/divider.svg" width="200" alt="">
+
+- **Bookings & enquiries for the DJ**: see the contact section on the [live site](https://adrianodj.pl).
+- **Questions about this website or its code**: reach out via [GitHub](https://github.com/majkab8).
+
+### 📜 License
+<img src="docs/divider.svg" width="200" alt="">
+
 © 2026 DJ Adriano. All rights reserved.
-This code is published for portfolio purposes only and may not be reused,
-copied, or redistributed without permission.
+This code is published for portfolio purposes only and may not be reused, copied, or redistributed without permission.

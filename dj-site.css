@@ -1,10 +1,11 @@
 :root {
-	--color-bg: #1a233f;
+	/* jaśniejszy granat (wcześniej: bg #1a233f, footer #141b34, surface #202539, surface-2 #1e2437, input #28304a) */
+	--color-bg: #26335a;
 	--color-bg-light: #f2ebdc;
-	--color-footer: #141b34;
-	--color-surface: #202539;
-	--color-surface-2: #1e2437;
-	--color-input: #28304a;
+	--color-footer: #1d2747;
+	--color-surface: #2c3861;
+	--color-surface-2: #29355c;
+	--color-input: #36436f;
 	--color-accent: #d8bd82;
 	--color-accent-light: #e1cd99;
 	--color-accent-dark: hsl(41, 48%, 46%);
